@@ -42,7 +42,7 @@ def guess_a_word():
             progress_update(word, guessed_letters)
 
             # Prompt the user to guess a letter
-            guess = input("Guess a letter: ").lower().strip()
+            guess = input("Guess a letter:\n").lower().strip()
 
             if not guess.isalpha() or len(guess) != 1:
                 print("Oops! Just one letter at a time, please!")
@@ -95,7 +95,7 @@ def play_again():
     Asks the player if they want to play again.
     """
     while True:
-        choice = input("Do you want to play again? (y/n): ").strip().lower()
+        choice = input("Do you want to play again? (y/n):\n").strip().lower()
         if choice == 'y':
             return True
         elif choice == 'n':
