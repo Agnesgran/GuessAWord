@@ -19,7 +19,8 @@ def get_word():
             # Return a random word from the chosen category
             return random.choice(categories[category])
         else:
-            print("Uh-oh! That category's not on the list. Try one of the given choices.")
+            print("Uh-oh! That category's not on the list." 
+                  "Try one of the given choices.")
     
 def guess_a_word():
     """
@@ -73,6 +74,13 @@ def progress_update(word, guessed_letters):
     Displays the current state of the game, 
     showing guessed letters and blanks for unguessed letters
     """ 
+     # Create a display string with guessed letters and underscores 
+     #for unguessed letters
+    display = ''.join([
+        letter if letter in guessed_letters else '_' for letter in word])
+    print("Current word: ", display)
+    print("Guessed letters: ", ' '.join(guessed_letters))
+
 
 def display_score(wins, losses):
     """
