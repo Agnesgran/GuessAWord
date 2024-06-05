@@ -86,6 +86,7 @@ def display_score(wins, losses):
     """
     Displays the current score of the player.
     """
+    print(f"Score: {wins} Wins, {losses} Losses")
 
 
 def play_again():
