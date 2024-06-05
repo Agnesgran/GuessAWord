@@ -93,6 +93,16 @@ def play_again():
     """
     Asks the player if they want to play again.
     """
+    while True:
+        choice = input("Do you want to play again? (y/n): ").strip().lower()
+        if choice == 'y':
+            return True
+        elif choice == 'n':
+            return False
+        else:
+            print("Invalid input. Please enter 'y' for Yes or 'n' for No.")
 
+if __name__ == "__main__":
+    guess_a_word()
 
 
