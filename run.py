@@ -20,13 +20,13 @@ def get_word():
             # Return a random word from the chosen category
             return random.choice(categories[category])
         else:
-            print("Uh-oh! That category's not on the list." 
-                    "Try one of the given choices.")
+            print("Uh-oh! That category's not on the list."
+                  "Try one of the given choices.")
 
 
 def guess_a_word():
     """
-    Main function to run the game. 
+    Main function to run the game.
     Manages game state, handles user input, and controls game flow.
     """
     wins = 0
@@ -37,7 +37,7 @@ def guess_a_word():
         guessed_letters = []
         attempts = 6
         print("Welcome to Guess A Word! Guess the word one letter at a time. "
-                "But be careful, you only have 6 attempts!")
+              "But be careful, you only have 6 attempts!")
         while attempts > 0:
             progress_update(word, guessed_letters)
 
@@ -74,9 +74,9 @@ def guess_a_word():
 
 def progress_update(word, guessed_letters):
     """
-    Displays the current state of the game, 
+    Displays the current state of the game,
     showing guessed letters and blanks for unguessed letters
-    """ 
+    """
     display = ''.join([
         letter if letter in guessed_letters else '_' for letter in word])
     print("Current word: ", display)
@@ -103,7 +103,7 @@ def play_again():
         else:
             print("Invalid input. Please enter 'y' for Yes or 'n' for No.")
 
+
 if __name__ == "__main__":
     guess_a_word()
-
-
+    
