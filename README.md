@@ -1,32 +1,91 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# GUESS A WORD
 
-Welcome,
+Guess a Word is a Python terminal game where players guess letters to reveal a hidden word from a chosen category. The game runs in the Code Institute mock terminal on Heroku and provides a fun and challenging word-guessing experience.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+## How to play
 
-## Reminders
+1. **Choose a category**: Select from the available categories: fruits, animals, or colors.
+2. **Guess letters**: Enter one letter at a time to reveal the hidden word.
+3. **Attempts**: You have six attempts to guess the word correctly.
+4. **Scoring**: Each correct guess reveals the letter in the word. Incorrect guesses reduce the number of attempts left.
+5. **End of Game**: The game ends when you guess the word or run out of attempts.
+6. **Play Again**: After each round, view your score and choose to play again if desired.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Features
 
-## Creating the Heroku app
+### Existing Features
+- **Category Selection**
+  - Players can choose from three categories: fruits, animals, or colors.
+- **Word Guessing**
+  - Players guess letters to reveal the hidden word.
+- **Attempts Tracking**
+  - Players have six attempts to guess the word.
+- **Feedback on Guesses**
+  - Correct guesses reveal letters in the word.
+  - Incorrect guesses are counted against the player.
+- **Score Display**
+  - The game displays the number of wins and losses.
+- **Play Again Option**
+  - Players can choose to play another round after the game ends.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Input Validation and Error Checking
+- **Single Letter Input**
+  - Ensures players enter only one letter at a time.
+- **Repeated Guesses**
+  - Prevents players from guessing the same letter more than once.
+- **Valid Letter Input**
+  - Accepts only alphabetical characters.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Data Model
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The game uses simple lists and strings to manage the game state. It maintains:
+- **Categories**: A dictionary of categories and corresponding words.
+- **Guessed Letters**: A list to track letters guessed by the player.
+- **Attempts**: An integer to track remaining attempts.
+- **Score**: Two integers to track wins and losses.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Testing
 
-Connect your GitHub repository and deploy as normal.
+The game has been manually tested by:
+- **Validating Input Handling**
+  - Tested for non-alphabetical input, multiple letters, and repeated guesses.
+- **Gameplay Flow**
+  - Ensured the game correctly tracks and displays the game state, attempts, and score.
 
-## Constraints
+## Bugs
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Solved Bugs
+- **Input Validation**
+  - **Issue**: The game previously accepted multiple letters at a time and allowed repeated guesses of the same letter.
+  - **Resolution**: Implemented checks to ensure that only single alphabetical characters are accepted as valid input. Added a condition to check if the guessed letter had already been guessed, providing appropriate feedback and not decrementing the attempts.
 
----
+### Remaining Bugs
+- No known bugs remaining.
 
-Happy coding!
+## Validator Testing
+
+- **PEP8**
+  - No errors were returned from https://pep8ci.herokuapp.com/# 
+
+## Deployment
+
+This project was deployed using the Code Institute's mock terminal for Heroku.
+
+- Steps for deployment:
+  - Fork or clone this repository
+  - Create a new Heroku app
+  - Set the buildpacks to `Python` and `NodeJS` in that order
+  - Link the Heroku app to the repository
+  - Click on Deploy
+
+## Credits
+
+- https://www.w3schools.com/python/python_try_except.asp.
+- https://www.w3schools.com/python/ref_random_choice.asp.
+- https://www.w3schools.com/.
+- Code Institute for the PEP8 Linter.
+- Code Institute for the deployment terminal.
+- Code Institute Python Essentials.
+- Code Institute Python Functions & Objects Oriented Programming.
+- Code Institute Python I/O Exception Handling. 
+
