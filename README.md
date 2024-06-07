@@ -2,6 +2,8 @@
 
 Guess a Word is a Python terminal game where players guess letters to reveal a hidden word from a chosen category. The game runs in the Code Institute mock terminal on Heroku and provides a fun and challenging word-guessing experience.
 
+![Responsice Mockup]()
+
 ## How to play
 
 1. **Choose a category**: Select from the available categories: fruits, animals, or colors.
@@ -16,25 +18,34 @@ Guess a Word is a Python terminal game where players guess letters to reveal a h
 ### Existing Features
 - **Category Selection**
   - Players can choose from three categories: fruits, animals, or colors.
+  ![Category Selection]()
 - **Word Guessing**
   - Players guess letters to reveal the hidden word.
+  ![Word Guessing]()
 - **Attempts Tracking**
   - Players have six attempts to guess the word.
+  ![Attempts Tracking]()
 - **Feedback on Guesses**
   - Correct guesses reveal letters in the word.
   - Incorrect guesses are counted against the player.
+  ![Feedback on Guesses]()
 - **Score Display**
   - The game displays the number of wins and losses.
+  ![Score Display]()
 - **Play Again Option**
   - Players can choose to play another round after the game ends.
+  ![Play Again Option]()
 
 ### Input Validation and Error Checking
 - **Single Letter Input**
   - Ensures players enter only one letter at a time.
+  ![Single Letter Input]()
 - **Repeated Guesses**
   - Prevents players from guessing the same letter more than once.
-- **Valid Letter Input**
-  - Accepts only alphabetical characters.
+  ![Repeated Guesses]()
+- **Catergory Choice**
+  - Ensures players enter one of the given category choices.
+  ![Catergory Choice]()
 
 ## Data Model
 
