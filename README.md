@@ -59,7 +59,7 @@ The game uses simple lists and strings to manage the game state. It maintains:
 
 The game has been manually tested by:
 - **Validating Input Handling**
-  - Tested for non-alphabetical input, multiple letters, and repeated guesses.
+  - Tested for category choice, multiple letters, and repeated guesses.
 - **Gameplay Flow**
   - Ensured the game correctly tracks and displays the game state, attempts, and score.
 
