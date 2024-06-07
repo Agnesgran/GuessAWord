@@ -24,28 +24,28 @@ Guess a Word is a Python terminal game where players guess letters to reveal a h
   ![Word Guessing](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/wordguessing.png)
 - **Attempts Tracking**
   - Players have six attempts to guess the word.
-  ![Attempts Tracking]()
+  ![Attempts Tracking](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/attemptstracking.png)
 - **Feedback on Guesses**
   - Correct guesses reveal letters in the word.
   - Incorrect guesses are counted against the player.
-  ![Feedback on Guesses]()
+  ![Feedback on Guesses](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/feedback.png)
 - **Score Display**
   - The game displays the number of wins and losses.
-  ![Score Display]()
+  ![Score Display](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/scoretracking.png)
 - **Play Again Option**
   - Players can choose to play another round after the game ends.
-  ![Play Again Option]()
+  ![Play Again Option](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/playagain.png)
 
 ### Input Validation and Error Checking
 - **Single Letter Input**
   - Ensures players enter only one letter at a time.
-  ![Single Letter Input]()
+  ![Single Letter Input](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/singleletter.png)
 - **Repeated Guesses**
   - Prevents players from guessing the same letter more than once.
-  ![Repeated Guesses]()
+  ![Repeated Guesses](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/repeatedguesses.png)
 - **Catergory Choice**
   - Ensures players enter one of the given category choices.
-  ![Catergory Choice]()
+  ![Catergory Choice](https://github.com/Agnesgran/GuessAWord/blob/main/assets/images/categorychoice.png)
 
 ## Data Model
 
